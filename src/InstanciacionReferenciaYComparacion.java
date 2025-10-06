@@ -64,6 +64,11 @@ public class InstanciacionReferenciaYComparacion {
         // 5. Imprime c5 de nuevo.
 
         // Tu código aquí ↓
+        Cancion c5 = new Cancion("two", "BBNO$");
+        Cancion c6 = c5;
+        System.out.println(c5 == c6);
+        c6 = new Cancion("You need jesus", "BBNO$");
+        System.out.println(c5 == c6);
 
         // ================================
         // EJERCICIO 6: null
@@ -74,7 +79,10 @@ public class InstanciacionReferenciaYComparacion {
         // Comenta la línea después de probar, porque lanzará un error.
 
         // Tu código aquí ↓
-
+        Pelicula p3 = null;
+        System.out.println(p3);
+        System.out.println(p3.getTitulo());// da un error, debido a que p3 no tiene un valor por lo que no puede obtener
+                                           // un titulo
     }
 
     private static void C1() {
@@ -88,23 +96,29 @@ public class InstanciacionReferenciaYComparacion {
 // ================================
 // Ejercicio 1: ¿Qué diferencia hay entre el constructor por defecto y el
 // parametrizado?
-// Respuesta: ...
+// Respuesta: en el por defecto, nosotros les damos unos valores desde la
+// creacion de la clase, con el parametrizado, le damos un valor desde la
+// creacion del objeto
 
 // Ejercicio 2: ¿Por qué da false al comparar con == dos objetos con los mismos
 // datos?
-// Respuesta: ...
+// Respuesta: debido a que "==" compara las instancias de memoria, las cuales
+// son distintas incluso si el contenido es el mismo
 
 // Ejercicio 3: ¿Qué diferencia hay entre == y equals()? ¿Por qué ahora sí
 // devuelve true?
-// Respuesta: ...
+// Respuesta: debido a que mientras que "==" compara las instancias de memoria,
+// "equals()" compara el contenido directo
 
 // Ejercicio 4: ¿Por qué en Pelicula equals no funciona como en Cancion?
-// Respuesta: ...
+// Respuesta:
 
 // Ejercicio 5: ¿Qué ocurre cuando modificas el objeto a través de c6? ¿Qué
 // demuestra?
-// Respuesta: ...
+// Respuesta:
 
 // Ejercicio 6: ¿Qué error aparece al acceder a un método de p3 siendo null?
 // ¿Qué significa realmente que una variable valga null?
-// Respuesta: ...
+// Respuesta: significa que no tiene un valor, el error que aparece es
+// "Exception in thread "main" java.lang.NullPointerException: Cannot invoke
+// "utilidades.Pelicula.getTitulo()" because "p3" is null"
