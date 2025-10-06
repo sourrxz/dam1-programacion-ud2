@@ -111,11 +111,12 @@ public class InstanciacionReferenciaYComparacion {
 // "equals()" compara el contenido directo
 
 // Ejercicio 4: ¿Por qué en Pelicula equals no funciona como en Cancion?
-// Respuesta:
+// Respuesta: debido a que se sobrescribio el equals en el archivo donde se
+// crearon las clases
 
 // Ejercicio 5: ¿Qué ocurre cuando modificas el objeto a través de c6? ¿Qué
 // demuestra?
-// Respuesta:
+// Respuesta: cambia el valor del archivo y deja de compararse con c5
 
 // Ejercicio 6: ¿Qué error aparece al acceder a un método de p3 siendo null?
 // ¿Qué significa realmente que una variable valga null?
