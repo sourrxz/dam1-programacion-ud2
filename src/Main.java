@@ -12,7 +12,7 @@ public class Main {
         // 2. Observa el error de compilación.
 
         // Tu código aquí ↓
-        System.out.println(cuenta.saldo);
+        // System.out.println(cuenta.saldo);//
 
         // ================================
         // EJERCICIO 2: Métodos públicos
@@ -33,7 +33,7 @@ public class Main {
         // 2. Observa el error de compilación.
 
         // Tu código aquí ↓
-        cuenta.registrarOperacion("hackeo", 999);
+        // cuenta.registrarOperacion("hackeo", 999);//
 
         // ================================
         // EJERCICIO 4: Libre
