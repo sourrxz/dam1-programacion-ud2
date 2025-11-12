@@ -1,8 +1,7 @@
-import utilidades.Calculadora;
 
 public class EjercicioCalculadora {
     public static void main(String[] args) {
-        Calculadora calc = new Calculadora();
+        
 
         // ================================
         // EJERCICIO 1: Métodos void
